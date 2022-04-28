@@ -69,7 +69,7 @@ jobs:
       #  # Or use ssc_version_id: 1234
       run: |
           echo 'Setting domain IP'
-          sudo echo "<PUBLIC_IP> fortify.cyberxdemo.com" | sudo tee -a /etc/hosts
+          sudo echo "34.207.246.37 fortify.cyberxdemo.com" | sudo tee -a /etc/hosts
           wget -nv https://github.com/fortify/FortifyVulnerabilityExporter/releases/download/v1.5.2/FortifyVulnerabilityExporter.zip
           mkdir -p $HOME/Fortify
           unzip FortifyVulnerabilityExporter.zip -d "$HOME/Fortify/"
